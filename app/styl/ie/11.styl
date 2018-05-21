@@ -1,0 +1,24 @@
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    .aside
+        col-float()
+        size(3)
+    .speakers
+        row-flex()
+        &__title
+            width 100%
+        &__data, &__become
+            width calc(100% / 7 - 15px)
+            margin: 0 14px
+        &__data
+            margin-left: 0
+        &__become
+            margin-right: 0
+    .become-speakers
+        &__title
+            padding: 0 5px
+    @media (max-width $break_mlg)
+        .speakers
+            &__data, &__become
+                width 160px
+
+
