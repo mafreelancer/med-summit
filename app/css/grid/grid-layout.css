@@ -2,13 +2,19 @@
   .wrapper {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 100vh;
+    grid-template-rows: 100%;
   }
   .speakers {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    padding: 0 18px;
-    grid-gap: 18px;
+    grid-gap: 17px 28px;
+  }
+  .speakers__title {
+    grid-column: 1/-1;
+  }
+  .speakers__become {
+    -webkit-align-self: end;
+        -ms-flex-item-align: end;
+            align-self: end;
   }
 }

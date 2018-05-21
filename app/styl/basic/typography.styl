@@ -9,6 +9,10 @@ h1
 a
     text-decoration: none
 
+format__text($size, $space)
+    font-size: $size
+    letter-spacing: $space
+
 .title
     &__main
         color $color_white
@@ -29,21 +33,41 @@ a
 .slide
     color: $color_white
     &__title
-        font-size: 47px
+        format__text(47px, 0.5px)
         font-weight: 100
-        letter-spacing: 0.5px
 
 .registration
     //color: $color_white
     font-weight: 100
     &__date
-        font-size: 47px
+        format__text(47px, 0.5px)
         font-weight: 100
-        letter-spacing: 0.5px
     &__tax
         font-style: italic
-        font-size: 14px
-        letter-spacing: -0.3px
+        format__text(14px, -0.3px)
     &__more
         font-size: 13px
         color: $color_white
+.speakers
+    &__title
+        format__text(27px, -1.6px)
+        font-weight: 700;
+    &__name
+        format__text(23px, 0.4px)
+    &__position
+        position relative
+        color: $color_green
+        margin-top: 13px
+        &:before
+            content: ''
+            width 38px
+            height 3px
+            position absolute
+            top -9px
+            background: $color_green
+
+.become-speakers
+    text-align: center
+    &__title
+        format__text(35px, 0.1px)
+        font-weight: bold
