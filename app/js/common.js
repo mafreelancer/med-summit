@@ -1,5 +1,1 @@
-$(function() {
 
-	// Custom JS
-
-});
