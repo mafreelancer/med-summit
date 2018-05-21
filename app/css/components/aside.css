@@ -1,0 +1,17 @@
+.title {
+  position: relative;
+}
+.title__main {
+  background: $color_green;
+  height: 355px;
+}
+.title__plus {
+  position: relative;
+  top: 7px;
+}
+.title__triangle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}

@@ -1,0 +1,14 @@
+html {
+  font: 16px 'Roboto';
+}
+h1 {
+  font-size: 66px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title__main {
+  color: $color_white;
+}
+.title__plus {
+  font-size: 1.4em;
+}
