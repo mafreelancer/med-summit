@@ -1,4 +1,9 @@
 @supports (display: grid) {
+  main {
+    display: grid !important;
+    grid-template-rows: auto -webkit-max-content;
+    grid-template-rows: auto max-content;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: 25% 75%;

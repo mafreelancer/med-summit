@@ -2,6 +2,9 @@
     grid($columns)
         display: grid
         grid-template-columns: $columns
+    main
+        display: grid !important
+        grid-template-rows: auto max-content
     .wrapper
         grid(25% 75%)
         grid-template-rows: 100%
