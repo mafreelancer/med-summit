@@ -1,3 +1,17 @@
+@supports (display: grid) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100vh;
+  }
+  .speakers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 18px;
+    grid-gap: 18px;
+  }
+}
 body,
 div,
 dl,
@@ -123,9 +137,43 @@ a {
   font-size: 35px;
   font-weight: bold;
 }
-aside {
-  width: -webkit-calc(25% - 30px);
-  width: calc(25% - 30px);
+.slide {
+  color: #fff;
+}
+.slide__title {
+  font-size: 47px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+.registration {
+  font-weight: 100;
+}
+.registration__date {
+  font-size: 47px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+.registration__tax {
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+}
+.registration__more {
+  font-size: 13px;
+  color: #fff;
+}
+.button {
+  display: inline-block;
+  font-size: 26px;
+  padding: 0.4em 1.2em;
+  -webkit-border-radius: 1em;
+          border-radius: 1em;
+  background: #008bff;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+.button--registration {
+  text-transform: uppercase;
 }
 .title {
   position: relative;
@@ -166,4 +214,31 @@ aside {
 .contacts {
   padding: 22.5px 0;
   text-align: center;
+}
+.slide {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(119,119,119,0.6)), to(rgba(0,0,0,0.6))), url("../img/bg.jpg");
+  background: -webkit-linear-gradient(left, rgba(119,119,119,0.6) 0%, rgba(0,0,0,0.6) 100%), url("../img/bg.jpg");
+  background: -o-linear-gradient(left, rgba(119,119,119,0.6) 0%, rgba(0,0,0,0.6) 100%), url("../img/bg.jpg");
+  background: linear-gradient(to right, rgba(119,119,119,0.6) 0%, rgba(0,0,0,0.6) 100%), url("../img/bg.jpg");
+  color: #fff;
+  padding: 35px 22px 43px;
+}
+.slide__title {
+  text-align: right;
+  height: 70vh;
+}
+.registration {
+  position: relative;
+  text-align: center;
+}
+.registration__button {
+  margin-top: 20px;
+}
+.registration__tax {
+  margin-top: 16px;
+}
+.registration__more {
+  display: inline-block;
+  margin-top: 11px;
+  border-bottom: 1px dotted #fff;
 }

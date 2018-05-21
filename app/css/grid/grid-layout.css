@@ -1,0 +1,14 @@
+@supports (display: grid) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100vh;
+  }
+  .speakers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 18px;
+    grid-gap: 18px;
+  }
+}

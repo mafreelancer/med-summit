@@ -1,0 +1,12 @@
+@supports (display: grid)
+    grid($columns)
+        display: grid
+        grid-template-columns: $columns
+    .wrapper
+        grid(25% 75%)
+        grid-template-columns: 25% 75%
+        grid-template-rows: 100vh
+    .speakers
+        grid(repeat(7, 1fr))
+        padding: 0 18px
+        grid-gap: 18px

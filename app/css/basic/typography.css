@@ -26,3 +26,28 @@ a {
   font-size: 35px;
   font-weight: bold;
 }
+.slide {
+  color: $color_white;
+}
+.slide__title {
+  font-size: 47px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+.registration {
+  font-weight: 100;
+}
+.registration__date {
+  font-size: 47px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+.registration__tax {
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+}
+.registration__more {
+  font-size: 13px;
+  color: $color_white;
+}
