@@ -6,9 +6,23 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+}
 .title__main {
   color: $color_white;
 }
 .title__plus {
   font-size: 1.4em;
+}
+.item-menu__href {
+  color: $color_black;
+}
+.contacts {
+  background: $color_brown;
+  color: $color_white;
+}
+.contacts__content {
+  font-size: 35px;
+  font-weight: bold;
 }

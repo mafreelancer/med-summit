@@ -103,11 +103,25 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+}
 .title__main {
   color: #fff;
 }
 .title__plus {
   font-size: 1.4em;
+}
+.item-menu__href {
+  color: #000;
+}
+.contacts {
+  background: #1f0000;
+  color: #fff;
+}
+.contacts__content {
+  font-size: 35px;
+  font-weight: bold;
 }
 aside {
   width: -webkit-calc(25% - 30px);
@@ -119,6 +133,8 @@ aside {
 .title__main {
   background: #00544e;
   height: 355px;
+  padding: 0 36px;
+  line-height: 80px;
 }
 .title__plus {
   position: relative;
@@ -129,4 +145,25 @@ aside {
   bottom: 0;
   width: 100%;
   height: 100px;
+}
+.menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.menu__item {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 71.5px 0;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+.menu__item:last-child {
+  margin-bottom: 93px;
+}
+.contacts {
+  padding: 22.5px 0;
+  text-align: center;
 }
