@@ -18,8 +18,60 @@
     grid-column: 1/-1;
   }
   .speakers__become {
+    grid-column: -2/-1;
     -webkit-align-self: end;
         -ms-flex-item-align: end;
             align-self: end;
+  }
+}
+@media screen and (max-width: $break_mlg) {
+  .speakers {
+    grid-template-columns: repeat(5, 160px);
+    grid-gap: 17px 15px;
+  }
+  .speakers__become {
+    -webkit-align-self: start;
+        -ms-flex-item-align: start;
+            align-self: start;
+    grid-row: 2/3;
+  }
+}
+@media screen and (max-width: $break_lg) {
+  .speakers {
+    grid-template-columns: repeat(3, 140px) auto;
+  }
+}
+@media screen and (max-width: $break_md) {
+  .speakers {
+    grid-template-columns: repeat(3, 140px);
+  }
+  .speakers__become {
+    -webkit-align-self: start;
+        -ms-flex-item-align: start;
+            align-self: start;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: $break_sm) {
+  .wrapper {
+    grid-template-columns: inherit;
+  }
+  .speakers {
+    grid-template-columns: repeat(2, 180px);
+    grid-gap: 17px 60px;
+  }
+  .speakers__become {
+    grid-row: 5/6;
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: $break_xs) {
+  .speakers {
+    grid-template-columns: repeat(1, 180px);
+  }
+  .speakers__become {
+    grid-row: 8/9;
+    grid-column: 1/-1;
   }
 }

@@ -18,9 +18,61 @@
     grid-column: 1/-1;
   }
   .speakers__become {
+    grid-column: -2/-1;
     -webkit-align-self: end;
         -ms-flex-item-align: end;
             align-self: end;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .speakers {
+    grid-template-columns: repeat(5, 160px);
+    grid-gap: 17px 15px;
+  }
+  .speakers__become {
+    -webkit-align-self: start;
+        -ms-flex-item-align: start;
+            align-self: start;
+    grid-row: 2/3;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .speakers {
+    grid-template-columns: repeat(3, 140px) auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .speakers {
+    grid-template-columns: repeat(3, 140px);
+  }
+  .speakers__become {
+    -webkit-align-self: start;
+        -ms-flex-item-align: start;
+            align-self: start;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 720px) {
+  .wrapper {
+    grid-template-columns: inherit;
+  }
+  .speakers {
+    grid-template-columns: repeat(2, 180px);
+    grid-gap: 17px 60px;
+  }
+  .speakers__become {
+    grid-row: 5/6;
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .speakers {
+    grid-template-columns: repeat(1, 180px);
+  }
+  .speakers__become {
+    grid-row: 8/9;
+    grid-column: 1/-1;
   }
 }
 body,
@@ -128,6 +180,21 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -136,6 +203,16 @@ a {
 }
 .title__plus {
   font-size: 1.4em;
+}
+.menu__item {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+@media screen and (max-width: 992px) {
+  .menu__item {
+    font-size: 1rem;
+  }
 }
 .item-menu__href {
   color: #000;
@@ -148,6 +225,11 @@ a {
   font-size: 35px;
   font-weight: bold;
 }
+@media screen and (max-width: 992px) {
+  .contacts__content {
+    font-size: 1.5rem;
+  }
+}
 .slide {
   color: #fff;
 }
@@ -156,6 +238,21 @@ a {
   letter-spacing: 0.5px;
   font-weight: 100;
 }
+@media screen and (max-width: 1440px) {
+  .slide__title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slide__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slide__title {
+    font-size: 1.4rem;
+  }
+}
 .registration {
   font-weight: 100;
 }
@@ -163,6 +260,21 @@ a {
   font-size: 47px;
   letter-spacing: 0.5px;
   font-weight: 100;
+}
+@media screen and (max-width: 1440px) {
+  .registration__date {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .registration__date {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .registration__date {
+    font-size: 1.4rem;
+  }
 }
 .registration__tax {
   font-style: italic;
@@ -178,14 +290,29 @@ a {
   letter-spacing: -1.6px;
   font-weight: 700;
 }
+@media screen and (max-width: 992px) {
+  .speakers__title {
+    font-size: 2rem;
+  }
+}
 .speakers__name {
   font-size: 23px;
   letter-spacing: 0.4px;
+}
+@media screen and (max-width: 1440px) {
+  .speakers__name {
+    font-size: 1.1rem;
+  }
 }
 .speakers__position {
   position: relative;
   color: #00544e;
   margin-top: 13px;
+}
+@media screen and (max-width: 1440px) {
+  .speakers__position {
+    font-size: 0.8rem;
+  }
 }
 .speakers__position:before {
   content: '';
@@ -203,6 +330,11 @@ a {
   letter-spacing: 0.1px;
   font-weight: bold;
 }
+@media screen and (max-width: 1440px) {
+  .become-speakers__title {
+    font-size: 1.3rem;
+  }
+}
 .button {
   display: inline-block;
   font-size: 26px;
@@ -214,6 +346,11 @@ a {
   color: #fff;
   text-align: center;
 }
+@media screen and (max-width: 1440px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
 .button--registration {
   text-transform: uppercase;
 }
@@ -222,13 +359,29 @@ a {
   letter-spacing: 0px;
   padding: 0.5em 2.33em;
 }
+aside {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 720px) {
+  aside {
+    display: none !important;
+  }
+}
 .title {
   position: relative;
 }
 .title__main {
   background: #00544e;
   height: 355px;
-  padding: 0 36px;
+  padding: 0 80px 0 36px;
   line-height: 80px;
 }
 .title__plus {
@@ -249,11 +402,13 @@ a {
           flex-direction: column;
 }
 .menu__item {
-  font-size: 24px;
-  font-weight: 300;
   margin: 71.5px 0;
   text-align: center;
-  letter-spacing: -0.5px;
+}
+@media screen and (max-width: 992px) {
+  .menu__item {
+    margin: 45px 0;
+  }
 }
 .menu__item:last-child {
   margin-bottom: 93px;
@@ -280,11 +435,24 @@ a {
   background: -webkit-linear-gradient(left, rgba(119,119,119,0.6) 0%, rgba(0,0,0,0.6) 100%), url("../img/bg.jpg");
   background: -o-linear-gradient(left, rgba(119,119,119,0.6) 0%, rgba(0,0,0,0.6) 100%), url("../img/bg.jpg");
   background: linear-gradient(to right, rgba(119,119,119,0.6) 0%, rgba(0,0,0,0.6) 100%), url("../img/bg.jpg");
+  background-position: center;
   color: #fff;
   padding: 35px 22px 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (max-width: 576px) {
+  .slide {
+    height: 100vh;
+  }
 }
 .slide__title {
   text-align: right;
+}
+@media screen and (max-width: 720px) {
+  .slide__title {
+    text-align: center;
+  }
 }
 .registration {
   position: relative;
@@ -302,13 +470,24 @@ a {
   border-bottom: 1px dotted #fff;
 }
 .speakers {
+  margin: 0 auto;
   padding: 14px 28px;
 }
 .speakers__button {
   margin-top: 56px;
 }
+@media screen and (max-width: 992px) {
+  .speakers__button {
+    margin-top: 10px;
+  }
+}
 .speakers__name {
   margin-top: 6px;
+}
+@media screen and (max-width: 992px) {
+  .speakers__title {
+    text-align: center;
+  }
 }
 .become-speakers__title {
   padding: 0 15px;

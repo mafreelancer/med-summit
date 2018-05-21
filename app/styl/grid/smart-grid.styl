@@ -1,6 +1,7 @@
 $columns = 12
 $atom = (100% / $columns)
 
+$break_mlg = 1440px // More large monitor
 $break_lg = 1200px
 $break_md = 992px
 $break_sm = 720px
@@ -220,6 +221,14 @@ shift-xs-padding-left($n)
 shift-xs-padding-right($n)
     $val = 100% / $columns * $n
     xs(padding-right, "calc(%s + %s)" % ($val $offset_xs_one_side))
+
+mlg($name, $value)
+    @media screen and (max-width: $break_mlg)
+        {$name} $value
+
+mlg-block($content)
+    @media screen and (max-width: $break_mlg)
+        {$content}  // More large monitor
 
 lg($name, $value)
     @media screen and (max-width: $break_lg)
