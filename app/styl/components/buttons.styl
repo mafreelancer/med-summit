@@ -23,8 +23,13 @@
         z-index: 1;
         padding: 5px;
         display none
+        width 100%
         sm(display, inline-block)
     &__icon
         height 20px
         position: relative;
         cursor pointer
+        transition_ease(1s)
+        transform: rotateX(0);
+        &--open
+            transform: rotateX(180deg);

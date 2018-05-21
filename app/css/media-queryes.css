@@ -1,1 +1,35 @@
-/* Grid */
+@media screen and (max-width: $break_sm) {
+  .title__main {
+    background: #00544e;
+    height: 120px;
+    padding: 0;
+    text-align: center;
+  }
+  .title__triangle {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 60px;
+  }
+  .title__plus {
+    top: 3px;
+  }
+  .aside {
+    position: fixed;
+    width: 100%;
+    -webkit-transform: translateY(-413px);
+        -ms-transform: translateY(-413px);
+            transform: translateY(-413px);
+  }
+  .aside--show {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .menu__item {
+    margin: 15px 0;
+  }
+  .menu__item:last-child {
+    margin: 15px 0;
+  }
+}

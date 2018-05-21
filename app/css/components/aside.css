@@ -1,4 +1,4 @@
-aside {
+.aside {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -8,6 +8,15 @@ aside {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 1;
+}
+.aside__block {
+  background: $color_white;
+}
+.aside--show {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 .title {
   position: relative;

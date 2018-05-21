@@ -27,9 +27,16 @@
   z-index: 1;
   padding: 5px;
   display: none;
+  width: 100%;
 }
 .button__icon {
   height: 20px;
   position: relative;
   cursor: pointer;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+.button__icon--open {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }

@@ -1,1 +1,24 @@
-    /* Grid */
+@media screen and (max-width $break_sm)
+    .title
+        &__main
+            background: #00544e;
+            height: 120px;
+            padding: 0;
+            text-align: center;
+        &__triangle
+            position: absolute;
+            bottom: -1px;
+            width: 100%;
+            height: 60px;
+        &__plus
+            top: 3px
+    .aside
+        position: fixed;
+        width: 100%;
+        transform: translateY(-413px)
+        &--show
+            transform: translateY(0)
+    .menu__item
+        margin: 15px 0
+        &:last-child
+            margin 15px 0

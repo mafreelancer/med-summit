@@ -1,8 +1,13 @@
-aside
+.aside
     flex()
     flex-direction: column;
     justify-content: space-between;
-    sm(display, none !important)
+    z-index 1
+    transition_ease()
+    &__block
+        background $color_white
+    &--show
+        transform: translateY(0)
 .title
     position relative
     &__main
